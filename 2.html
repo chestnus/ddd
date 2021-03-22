@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		button{
+			margin: 10px;
+		}
+		.q{
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<input type="text" name="">
+	<button>添加</button>
+	<ol></ol>
+	<button class="q">清空列表</button>
+	<script type="text/javascript">
+		var a='&nbssp;';
+		var b='c';
+		$('button').eq(0).click(function(){
+			if(!$('input').val()){
+				alert('还没有填写内容');
+			}else{
+				$('ol').prepend(a+'<span>'+b+'</span>'+a+$('input').val()'');
+				$('input').val('');
+			}
+		});
+		$('button').eq(1).click(function(){
+			$('ol').empty();
+		});
+	</script>
+	<script src="js/jquery.min.js"></script>
+</body>
+</html>
